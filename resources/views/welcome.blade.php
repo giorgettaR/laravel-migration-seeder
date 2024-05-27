@@ -26,7 +26,7 @@
                 @foreach ($trains as $train)
                 <div class="col-3">
                     <ul>
-                        <li class="fw-bold">{{ $train->company}}</li>
+                        <li class="fw-bold">{{ $train->company}} {{ $train->train_code }}</li>
                         <li>{{ $train->departure_station }}</li>
                         <li>{{ $train->arrival_station }}</li>
                         <li>{{ $train->departure_time }}</li>
